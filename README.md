@@ -29,6 +29,10 @@
 }
 ```
 
+## Options
+
+See [stylelint-webpack-plugin](https://github.com/webpack-contrib/stylelint-webpack-plugin#options) options.
+
 ## Development
 
 1. Clone this repository
