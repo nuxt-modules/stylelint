@@ -23,6 +23,7 @@
     "lib"
   ],
   "dependencies": {
+    "consola": "^2.9.0",
     "stylelint-webpack-plugin": "^0.10.5"
   },
   "devDependencies": {
