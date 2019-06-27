@@ -12,7 +12,7 @@ let nuxt, port
 const url = path => `http://localhost:${port}${path}`
 const get = path => request(url(path))
 
-describe('module', () => {
+describe('dev', () => {
   beforeAll(async () => {
     nuxt = new Nuxt(config)
     await nuxt.ready()
