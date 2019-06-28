@@ -7,15 +7,19 @@
 [![Dependencies][david-dm-src]][david-dm-href]
 [![Standard JS][standard-js-src]][standard-js-href]
 
-> Stylelint will run on saving
+> [Stylelint](https://stylelint.io) module for [Nuxt.js](https://nuxtjs.org)
 
 [📖 **Release Notes**](./CHANGELOG.md)
 
 ## Setup
 
-1. Add the `nuxt-stylelint` dependency with `yarn` or `npm` to your project
+1. Add `nuxt-stylelint` dependency to your project
+
+```bash
+npm install --save-dev nuxt-stylelint # or yarn add --dev nuxt-stylelint
+```
+
 2. Add `nuxt-stylelint` to the `devModules` section of `nuxt.config.js`
-3. Configure it:
 
 ```js
 {
@@ -33,7 +37,7 @@
 
 ```js
 {
-  modules: [
+  devModules: [
     'nuxt-stylelint'
   ],
   stylelint: {
