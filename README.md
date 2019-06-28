@@ -98,7 +98,7 @@ Lint only changed files, skip lint on start.
 
 - Default: `undefined`
 
-See the `styelint` [user guide](https://stylelint.io/user-guide/node-api/#syntax) for more info.
+See the `stylelint` [user guide](https://stylelint.io/user-guide/node-api/#syntax) for more info.
 
 > See all options in [stylelint-webpack-plugin](https://github.com/webpack-contrib/stylelint-webpack-plugin#options).
 
