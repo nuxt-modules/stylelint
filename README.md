@@ -16,7 +16,7 @@
 1. Add `nuxt-stylelint` dependency to your project
 
 ```bash
-npm install --save-dev nuxt-stylelint # or yarn add --dev nuxt-stylelint
+yarn add --dev nuxt-stylelint # or npm install --save-dev nuxt-stylelint
 ```
 
 2. Add `nuxt-stylelint` to the `devModules` section of `nuxt.config.js`
