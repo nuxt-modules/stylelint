@@ -29,6 +29,19 @@
 }
 ```
 
+### Using top level options
+
+```js
+{
+  modules: [
+    'nuxt-stylelint'
+  ],
+  stylelint: {
+    /* module options */
+  }
+}
+```
+
 ## Options
 
 ### `configFile`
@@ -79,9 +92,9 @@ Lint only changed files, skip lint on start.
 
 ### `syntax`
 
-- Default: `scss`
+- Default: `undefined`
 
-See the `styelint` [user guide](https://stylelint.io/user-guide/node-api/#syntax) for more info.
+See the `styelint` [user guide](https://stylelint.io/user-guide/node-api/#syntax) for more info. e.g. use `'scss'` to lint .scss files.
 
 > See all options in [stylelint-webpack-plugin](https://github.com/webpack-contrib/stylelint-webpack-plugin#options).
 
