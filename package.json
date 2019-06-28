@@ -1,7 +1,7 @@
 {
   "name": "nuxt-stylelint",
   "version": "1.0.0",
-  "description": "Stylelint will run on saving",
+  "description": "Stylelint module for Nuxt.js",
   "license": "MIT",
   "contributors": [
     {
