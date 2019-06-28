@@ -58,9 +58,9 @@ Specify the config file location to be used by `stylelint`.
 
 ### `context`
 
-- Default: `compiler.context`
+- Default: `srcDir`
 
-A String indicating the root of your SCSS files.
+A string indicating the root of your files.
 
 ### `emitErrors`
 
@@ -78,7 +78,7 @@ If true, throws a fatal error in the global build process. This will end the bui
 
 ### `files`
 
-- Default: `'**/*.s?(a|c)ss'`
+- Default: `['assets/**/*.{s?(a|c)ss,less,stylus}', '{components,layouts,pages}/**/*.vue']`
 
 Specify the glob pattern for finding files. Must be relative to `options.context`.
 
@@ -98,7 +98,7 @@ Lint only changed files, skip lint on start.
 
 - Default: `undefined`
 
-See the `styelint` [user guide](https://stylelint.io/user-guide/node-api/#syntax) for more info. e.g. use `'scss'` to lint .scss files.
+See the `styelint` [user guide](https://stylelint.io/user-guide/node-api/#syntax) for more info.
 
 > See all options in [stylelint-webpack-plugin](https://github.com/webpack-contrib/stylelint-webpack-plugin#options).
 
