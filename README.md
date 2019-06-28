@@ -29,9 +29,74 @@
 }
 ```
 
+### Using top level options
+
+```js
+{
+  modules: [
+    'nuxt-stylelint'
+  ],
+  stylelint: {
+    /* module options */
+  }
+}
+```
+
 ## Options
 
-See [stylelint-webpack-plugin](https://github.com/webpack-contrib/stylelint-webpack-plugin#options) options.
+### `configFile`
+
+- Default: `undefined`
+
+Specify the config file location to be used by `stylelint`.
+
+*Note: By default this is [handled by `stylelint`](http://stylelint.io/user-guide/configuration/) via cosmiconfig.*
+
+### `context`
+
+- Default: `compiler.context`
+
+A String indicating the root of your SCSS files.
+
+### `emitErrors`
+
+- Default: `true`
+
+If true, pipes stylelint error severity messages to the webpack compiler's error message handler.
+
+*Note: When this property is disabled all `stylelint` messages are piped to the `webpack` compiler's warning message handler.*
+
+### `failOnError`
+
+- Default: `false`
+
+If true, throws a fatal error in the global build process. This will end the build process on any `stylelint` error.
+
+### `files`
+
+- Default: `'**/*.s?(a|c)ss'`
+
+Specify the glob pattern for finding files. Must be relative to `options.context`.
+
+### `formatter`
+
+- Default: `require('stylelint').formatters.string`
+
+Specify a custom formatter to format errors printed to the console.
+
+### `lintDirtyModulesOnly`
+
+- Default: `false`
+
+Lint only changed files, skip lint on start.
+
+### `syntax`
+
+- Default: `undefined`
+
+See the `styelint` [user guide](https://stylelint.io/user-guide/node-api/#syntax) for more info. e.g. use `'scss'` to lint .scss files.
+
+> See all options in [stylelint-webpack-plugin](https://github.com/webpack-contrib/stylelint-webpack-plugin#options).
 
 ## Development
 
