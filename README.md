@@ -11,6 +11,14 @@
 
 [📖 **Release Notes**](./CHANGELOG.md)
 
+## Requirements
+
+You need to ensure that you have `stylelint` installed
+
+```bash
+yarn add --dev stylelint # or npm install --save-dev stylelint
+```
+
 ## Setup
 
 1. Add `nuxt-stylelint` dependency to your project
