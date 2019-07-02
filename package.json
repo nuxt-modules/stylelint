@@ -1,5 +1,5 @@
 {
-  "name": "nuxt-stylelint",
+  "name": "@nuxtjs/stylelint-module",
   "version": "1.1.1",
   "description": "Stylelint module for Nuxt.js",
   "license": "MIT",
@@ -9,7 +9,7 @@
     }
   ],
   "main": "lib/module.js",
-  "repository": "https://github.com/ricardogobbosouza/nuxt-stylelint",
+  "repository": "https://github.com/nuxt-community/stylelint-module",
   "publishConfig": {
     "access": "public"
   },

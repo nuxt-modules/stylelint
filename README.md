@@ -1,4 +1,4 @@
-# nuxt-stylelint
+# @nuxtjs/stylelint-module
 
 [![npm version][npm-version-src]][npm-version-href]
 [![npm downloads][npm-downloads-src]][npm-downloads-href]
@@ -21,22 +21,22 @@ yarn add --dev stylelint # or npm install --save-dev stylelint
 
 ## Setup
 
-1. Add `nuxt-stylelint` dependency to your project
+1. Add `@nuxtjs/stylelint-module` dependency to your project
 
 ```bash
-yarn add --dev nuxt-stylelint # or npm install --save-dev nuxt-stylelint
+yarn add --dev @nuxtjs/stylelint-module # or npm install --save-dev @nuxtjs/stylelint-module
 ```
 
-2. Add `nuxt-stylelint` to the `devModules` section of `nuxt.config.js`
+2. Add `@nuxtjs/stylelint-module` to the `devModules` section of `nuxt.config.js`
 
 ```js
 {
   devModules: [
     // Simple usage
-    'nuxt-stylelint',
+    '@nuxtjs/stylelint-module',
 
     // With options
-    ['nuxt-stylelint', { /* module options */ }]
+    ['@nuxtjs/stylelint-module', { /* module options */ }]
   ]
 }
 ```
@@ -46,7 +46,7 @@ yarn add --dev nuxt-stylelint # or npm install --save-dev nuxt-stylelint
 ```js
 {
   devModules: [
-    'nuxt-stylelint'
+    '@nuxtjs/stylelint-module'
   ],
   stylelint: {
     /* module options */
@@ -120,23 +120,23 @@ See the `stylelint` [user guide](https://stylelint.io/user-guide/node-api/#synta
 
 [MIT License](./LICENSE)
 
-Copyright (c) Ricardo Gobbo de Souza <ricardogobbosouza@yahoo.com.br>
+Copyright (c) Nuxt Community
 
 <!-- Badges -->
-[npm-version-src]: https://img.shields.io/npm/dt/nuxt-stylelint.svg?style=flat-square
-[npm-version-href]: https://npmjs.com/package/nuxt-stylelint
+[npm-version-src]: https://img.shields.io/npm/dt/@nuxtjs/stylelint-module.svg?style=flat-square
+[npm-version-href]: https://npmjs.com/package/@nuxtjs/stylelint-module
 
-[npm-downloads-src]: https://img.shields.io/npm/v/nuxt-stylelint/latest.svg?style=flat-square
-[npm-downloads-href]: https://npmjs.com/package/nuxt-stylelint
+[npm-downloads-src]: https://img.shields.io/npm/v/@nuxtjs/stylelint-module/latest.svg?style=flat-square
+[npm-downloads-href]: https://npmjs.com/package/@nuxtjs/stylelint-module
 
-[circle-ci-src]: https://img.shields.io/circleci/project/github/ricardogobbosouza/nuxt-stylelint.svg?style=flat-square
-[circle-ci-href]: https://circleci.com/gh/ricardogobbosouza/nuxt-stylelint
+[circle-ci-src]: https://img.shields.io/circleci/project/github/nuxt-community/stylelint-module.svg?style=flat-square
+[circle-ci-href]: https://circleci.com/gh/nuxt-community/stylelint-module
 
-[codecov-src]: https://img.shields.io/codecov/c/github/ricardogobbosouza/nuxt-stylelint.svg?style=flat-square
-[codecov-href]: https://codecov.io/gh/ricardogobbosouza/nuxt-stylelint
+[codecov-src]: https://img.shields.io/codecov/c/github/nuxt-community/stylelint-module.svg?style=flat-square
+[codecov-href]: https://codecov.io/gh/nuxt-community/stylelint-module
 
-[david-dm-src]: https://david-dm.org/ricardogobbosouza/nuxt-stylelint/status.svg?style=flat-square
-[david-dm-href]: https://david-dm.org/ricardogobbosouza/nuxt-stylelint
+[david-dm-src]: https://david-dm.org/nuxt-community/stylelint-module/status.svg?style=flat-square
+[david-dm-href]: https://david-dm.org/nuxt-community/stylelint-module
 
 [standard-js-src]: https://img.shields.io/badge/code_style-standard-brightgreen.svg?style=flat-square
 [standard-js-href]: https://standardjs.com
