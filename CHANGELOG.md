@@ -2,6 +2,20 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+## [2.0.0](https://github.com/nuxt-community/stylelint-module/compare/v1.1.1...v2.0.0) (2019-07-02)
+
+
+### chore
+
+* move to `nuxt-community` ([78ded14](https://github.com/nuxt-community/stylelint-module/commit/78ded14))
+
+
+### BREAKING CHANGES
+
+* Move from `nuxt-stylelint` to `@nuxtjs/stylelint-module`
+
+
+
 ### [1.1.1](https://github.com/ricardogobbosouza/nuxt-stylelint/compare/v1.1.0...v1.1.1) (2019-07-02)
 
 
