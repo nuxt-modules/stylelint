@@ -4,9 +4,7 @@
   "description": "Stylelint module for Nuxt.js",
   "license": "MIT",
   "contributors": [
-    {
-      "name": "Ricardo Gobbo de Souza <ricardogobbosouza@yahoo.com.br>"
-    }
+    "Ricardo Gobbo de Souza <ricardogobbosouza@yahoo.com.br>"
   ],
   "main": "lib/module.js",
   "repository": "nuxt-community/stylelint-module",
