@@ -26,11 +26,13 @@ yarn add --dev stylelint # or npm install --save-dev stylelint
 yarn add --dev @nuxtjs/stylelint-module # or npm install --save-dev @nuxtjs/stylelint-module
 ```
 
-2. Add `@nuxtjs/stylelint-module` to the `devModules` section of `nuxt.config.js`
+2. Add `@nuxtjs/stylelint-module` to the `buildModules` section of `nuxt.config.js`
+
+:warning: If you are using Nuxt `< 2.9.0`, use `modules` instead.
 
 ```js
 {
-  devModules: [
+  buildModules: [
     // Simple usage
     '@nuxtjs/stylelint-module',
 
@@ -44,7 +46,7 @@ yarn add --dev @nuxtjs/stylelint-module # or npm install --save-dev @nuxtjs/styl
 
 ```js
 {
-  devModules: [
+  buildModules: [
     '@nuxtjs/stylelint-module'
   ],
   stylelint: {
