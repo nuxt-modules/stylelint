@@ -1,7 +1,7 @@
 const { setup, loadConfig, get } = require('@nuxtjs/module-test-utils')
 const config = loadConfig(__dirname, null, { dev: false })
 
-describe('dev', () => {
+describe('prod', () => {
   let nuxt
 
   beforeAll(async () => {
