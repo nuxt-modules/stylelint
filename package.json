@@ -2,24 +2,21 @@
   "name": "@nuxtjs/stylelint-module",
   "version": "2.0.0",
   "description": "Stylelint module for Nuxt.js",
+  "repository": "nuxt-community/stylelint-module",
   "license": "MIT",
   "contributors": [
     "Ricardo Gobbo de Souza <ricardogobbosouza@yahoo.com.br>"
   ],
-  "main": "lib/module.js",
-  "repository": "nuxt-community/stylelint-module",
-  "publishConfig": {
-    "access": "public"
-  },
-  "scripts": {
-    "dev": "nuxt test/fixture",
-    "lint": "eslint --ext .js,.vue lib test",
-    "test": "yarn lint && jest",
-    "release": "yarn test && standard-version && git push --follow-tags && npm publish"
-  },
   "files": [
     "lib"
   ],
+  "main": "lib/module.js",
+  "scripts": {
+    "dev": "nuxt test/fixture",
+    "lint": "eslint --ext .js,.vue .",
+    "release": "yarn test && standard-version && git push --follow-tags && npm publish",
+    "test": "yarn lint && jest"
+  },
   "dependencies": {
     "consola": "^2.10.1",
     "stylelint-webpack-plugin": "^0.10.5"
@@ -39,5 +36,8 @@
   },
   "peerDependencies": {
     "stylelint": ">=8.0.0 <11.0.0"
+  },
+  "publishConfig": {
+    "access": "public"
   }
 }
