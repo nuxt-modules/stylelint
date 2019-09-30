@@ -2,6 +2,20 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+## [3.0.0](https://github.com/nuxt-community/stylelint-module/compare/v2.0.0...v3.0.0) (2019-09-30)
+
+
+### ⚠ BREAKING CHANGES
+
+* **deps:** drop support for stylelint 8
+
+* **deps:** update peerdependency stylelint ([445d535](https://github.com/nuxt-community/stylelint-module/commit/445d535))
+
+
+### Bug Fixes
+
+* doesn't work on SPA mode ([#13](https://github.com/nuxt-community/stylelint-module/issues/13)) ([052d1e8](https://github.com/nuxt-community/stylelint-module/commit/052d1e8))
+
 ## [2.0.0](https://github.com/nuxt-community/stylelint-module/compare/v1.1.1...v2.0.0) (2019-07-02)
 
 
