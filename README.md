@@ -12,7 +12,7 @@
 
 ## Requirements
 
-You need to ensure that you have `stylelint` installed
+You need to ensure that you have `stylelint` installed:
 
 ```bash
 yarn add --dev stylelint # or npm install --save-dev stylelint
