@@ -6,7 +6,7 @@
 [![Codecov][codecov-src]][codecov-href]
 [![License][license-src]][license-href]
 
-> [Stylelint](https://stylelint.io) module for [Nuxt.js](https://nuxtjs.org)
+> Stylelint module for Nuxt.js
 
 [📖 **Release Notes**](./CHANGELOG.md)
 
