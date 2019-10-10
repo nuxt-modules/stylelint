@@ -2,6 +2,13 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+### [3.0.1](https://github.com/nuxt-community/stylelint-module/compare/v3.0.0...v3.0.1) (2019-10-10)
+
+
+### Bug Fixes
+
+* fix: require when need ([f75df56](https://github.com/nuxt-community/stylelint-module/commit/f75df56))
+
 ## [3.0.0](https://github.com/nuxt-community/stylelint-module/compare/v2.0.0...v3.0.0) (2019-09-30)
 
 
