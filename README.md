@@ -57,21 +57,14 @@ export default {
 
 ## Options
 
-### `configFile`
-
-- Type: `String`
-- Default: `undefined`
-
-Specify the config file location to be used by `stylelint`.
-
-*Note: By default this is [handled by `stylelint`](http://stylelint.io/user-guide/configuration/).*
+You can pass [stylelint options](http://stylelint.io/user-guide/node-api/#options).
 
 ### `context`
 
 - Type: `String`
 - Default: `srcDir`
 
-A string indicating the root of your style files.
+A string indicating the root of your files.
 
 ### `files`
 
@@ -85,7 +78,7 @@ Specify the glob pattern for finding files. Must be relative to `options.context
 - Type: `Function`
 - Default: `require('stylelint').formatters.string`
 
-Specify a custom formatter to format errors printed to the console.
+Specify the formatter that you would like to use to format your results.
 
 ### `lintDirtyModulesOnly`
 
@@ -101,13 +94,6 @@ Lint only changed files, skip lint on start.
 
 Path to `stylelint` instance that will be used for linting.
 
-### `syntax`
-
-- Type: `String`
-- Default: `undefined`
-
-See the `stylelint` [user guide](https://stylelint.io/user-guide/node-api/#syntax) for more info.
-
 ### Errors and Warning
 
 **By default the plugin will auto adjust error reporting depending on stylelint errors/warnings counts.**
@@ -118,37 +104,35 @@ You can still force this behavior by using `emitError` **or** `emitWarning` opti
 - Type: `Boolean`
 - Default: `false`
 
-Will always return errors, if this option is set to `true`.
+Will always return errors, if set to `true`.
 
 #### `emitWarning`
 
 - Type: `Boolean`
 - Default: `false`
 
-Will always return warnings, if option is set to `true`.
+Will always return warnings, if set to `true`.
 
 #### `failOnError`
 
 - Type: `Boolean`
 - Default: `false`
 
-Will cause the module build to fail if there are any errors, if option is set to `true`.
+Will cause the module build to fail if there are any errors, if set to `true`.
 
 #### `failOnWarning`
 
 - Type: `Boolean`
 - Default: `false`
 
-Will cause the module build to fail if there are any warnings, if option is set to `true`.
+Will cause the module build to fail if there are any warnings, if set to `true`.
 
 #### `quiet`
 
 - Type: `Boolean`
 - Default: `false`
 
-Will process and report errors only and ignore warnings, if this option is set to `true`.
-
-> See all options in [stylelint-webpack-plugin](https://github.com/webpack-contrib/stylelint-webpack-plugin#options).
+Will process and report errors only and ignore warnings, if set to `true`.
 
 ## Development
 
