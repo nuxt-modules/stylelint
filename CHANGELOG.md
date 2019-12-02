@@ -2,6 +2,13 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+### [3.1.1](https://github.com/nuxt-community/stylelint-module/compare/v3.1.0...v3.1.1) (2019-12-02)
+
+
+### Bug Fixes
+
+* update `stylelint-webpack-plugin` ([67be1f0](https://github.com/nuxt-community/stylelint-module/commit/67be1f04cfe60fdc304c2877330fab46bbb795c5))
+
 ## [3.1.0](https://github.com/nuxt-community/stylelint-module/compare/v3.0.1...v3.1.0) (2019-11-18)
 
 
