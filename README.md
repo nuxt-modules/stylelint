@@ -99,9 +99,7 @@ Path to `stylelint` instance that will be used for linting.
 - Type: `Boolean`
 - Default: `false`
 
-With --fix option stylelint will fix as many errors as possible. The fixes are made to the actual source files. All unfixed errors will be reported.
-
-[Learn more](https://stylelint.io/user-guide/cli#autofixing-errors)
+If true, stylelint will fix as many errors as possible. The fixes are made to the actual source files. All unfixed errors will be reported. See (Autofixing errors](https://stylelint.io/user-guide/cli#autofixing-errors) docs.
 
 ### Errors and Warning
 
