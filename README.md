@@ -94,6 +94,13 @@ Lint only changed files, skip lint on start.
 
 Path to `stylelint` instance that will be used for linting.
 
+### `fix`
+
+- Type: `Boolean`
+- Default: `false`
+
+If true, stylelint will fix as many errors as possible. The fixes are made to the actual source files. All unfixed errors will be reported. See (Autofixing errors](https://stylelint.io/user-guide/cli#autofixing-errors) docs.
+
 ### Errors and Warning
 
 **By default the plugin will auto adjust error reporting depending on stylelint errors/warnings counts.**
