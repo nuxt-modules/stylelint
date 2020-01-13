@@ -2,6 +2,13 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+## [3.2.0](https://github.com/nuxt-community/stylelint-module/compare/v3.1.1...v3.2.0) (2020-01-13)
+
+
+### Features
+
+* support stylelint v13 ([f1272df](https://github.com/nuxt-community/stylelint-module/commit/f1272df50e5e9abded9f79903ac59de52b1ad930))
+
 ### [3.1.1](https://github.com/nuxt-community/stylelint-module/compare/v3.1.0...v3.1.1) (2019-12-02)
 
 
