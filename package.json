@@ -19,7 +19,7 @@
   },
   "dependencies": {
     "consola": "^2.11.3",
-    "stylelint-webpack-plugin": "^1.2.1"
+    "stylelint-webpack-plugin": "^1.2.3"
   },
   "devDependencies": {
     "@commitlint/cli": "latest",
