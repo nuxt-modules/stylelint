@@ -7,10 +7,10 @@
   "contributors": [
     "Ricardo Gobbo de Souza <ricardogobbosouza@yahoo.com.br>"
   ],
+  "main": "lib/module.js",
   "files": [
     "lib"
   ],
-  "main": "lib/module.js",
   "scripts": {
     "dev": "nuxt test/fixture",
     "lint": "eslint --ext .js,.vue .",
