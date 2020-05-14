@@ -34,7 +34,7 @@
     "stylelint": "latest"
   },
   "peerDependencies": {
-    "stylelint": ">=13"
+    "stylelint": ">=13.3.3"
   },
   "publishConfig": {
     "access": "public"
