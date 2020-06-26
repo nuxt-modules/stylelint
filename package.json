@@ -18,8 +18,8 @@
     "test": "yarn lint && jest"
   },
   "dependencies": {
-    "consola": "^2.13.0",
-    "stylelint-webpack-plugin": "^2.0.0"
+    "consola": "^2.14.0",
+    "stylelint-webpack-plugin": "^2.1.0"
   },
   "devDependencies": {
     "@commitlint/cli": "latest",
