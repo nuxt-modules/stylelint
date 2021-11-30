@@ -2,6 +2,14 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+## [4.1.0](https://github.com/nuxt-community/stylelint-module/compare/v3.2.2...v4.1.0) (2021-11-30)
+
+
+### Features
+
+* support stylelint v14 ([#61](https://github.com/nuxt-community/stylelint-module/issues/61)) ([17cfd39](https://github.com/nuxt-community/stylelint-module/commit/17cfd39e38738849e4699a0979ffccbbe08886c9))
+
+
 ## [4.0.0](https://github.com/nuxt-community/stylelint-module/compare/v3.2.2...v4.0.0) (2020-05-14)
 
 
