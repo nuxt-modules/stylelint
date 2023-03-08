@@ -20,7 +20,7 @@ export default defineNuxtModule<ModuleOptions>({
   },
   defaults: nuxt => ({
     cache: true,
-    extensions: ['css', 'scss', 'sass', 'less', 'styl', 'vue'],
+    include: [`${nuxt.options.srcDir}/**/*.{css,scss,sass,less,styl,vue}`],
     exclude: ['**/node_modules/**', 'virtual:', nuxt.options.buildDir],
     stylelintPath: 'stylelint',
     formatter: 'string',
@@ -50,23 +50,12 @@ export default defineNuxtModule<ModuleOptions>({
       }
     })
 
-    const extensions = Array.isArray(options.extensions) ? options.extensions : [String(options.extensions)]
-    const include = [`${nuxt.options.srcDir}/**/*.{${extensions.join(',')}}`]
-
-    if (options.files) {
-      include.push(...(Array.isArray(options.files) ? options.files : [options.files]))
-    }
-
-    addVitePlugin(vitePluginStylelint({
-      ...options,
-      include
-    }), { server: false })
+    addVitePlugin(vitePluginStylelint(options), { server: false })
 
     addWebpackPlugin(new StylelintWebpackPlugin({
       ...options,
-      extensions,
       context: nuxt.options.srcDir,
-      files: include,
+      files: options.include,
       lintDirtyModulesOnly: !options.lintOnStart
     }), { server: false })
   }
