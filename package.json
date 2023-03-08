@@ -24,10 +24,9 @@
   "devDependencies": {
     "@commitlint/cli": "^16.3.0",
     "@commitlint/config-conventional": "^16.2.4",
-    "@nuxtjs/eslint-config": "latest",
+    "@nuxtjs/eslint-config": "^7.0.0",
     "@nuxtjs/module-test-utils": "latest",
     "eslint": "latest",
-    "eslint-plugin-jest": "latest",
     "husky": "^4.3.8",
     "jest": "latest",
     "nuxt-edge": "latest",
