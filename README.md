@@ -118,21 +118,21 @@ You can still force this behavior by using `emitError` **or** `emitWarning` opti
 #### `emitError`
 
 - Type: `Boolean`
-- Default: `false`
+- Default: `true`
 
 Will always return errors, if set to `true`.
 
 #### `emitWarning`
 
 - Type: `Boolean`
-- Default: `false`
+- Default: `true`
 
 Will always return warnings, if set to `true`.
 
 #### `failOnError`
 
 - Type: `Boolean`
-- Default: `false`
+- Default: `true`
 
 Will cause the module build to fail if there are any errors, if set to `true`.
 
