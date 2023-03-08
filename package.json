@@ -27,14 +27,15 @@
     "@nuxtjs/eslint-config": "latest",
     "@nuxtjs/module-test-utils": "latest",
     "eslint": "latest",
-    "husky": "latest",
+    "eslint-plugin-jest": "latest",
+    "husky": "^4.0.0",
     "jest": "latest",
     "nuxt-edge": "latest",
     "standard-version": "latest",
     "stylelint": "latest"
   },
   "peerDependencies": {
-    "stylelint": "^13.0.0 || ^14.0.0",
+    "stylelint": ">=13",
     "webpack": "^4.0.0 || ^5.0.0"
   },
   "publishConfig": {
