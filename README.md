@@ -14,23 +14,51 @@
 
 You need to ensure that you have `stylelint` installed:
 
+With `pnpm`
+
 ```bash
-yarn add --dev stylelint # or npm install --save-dev stylelint
+pnpm add -D stylelint
+```
+
+Or, with `yarn`
+
+```bash
+yarn add -D stylelint
+```
+
+Or, with `npm`
+
+```bash
+npm install -D stylelint
 ```
 
 ## Setup
 
 1. Add `@nuxtjs/stylelint-module` dependency to your project
 
+With `pnpm`
+
 ```bash
-yarn add --dev @nuxtjs/stylelint-module # or npm install --save-dev @nuxtjs/stylelint-module
+pnpm add -D @nuxtjs/stylelint-module
 ```
 
-2. Add `@nuxtjs/stylelint-module` to the `buildModules` section of `nuxt.config.js`
+Or, with `yarn`
+
+```bash
+yarn add -D @nuxtjs/stylelint-module
+```
+
+Or, with `npm`
+
+```bash
+npm install -D @nuxtjs/stylelint-module
+```
+
+2. Add `@nuxtjs/stylelint-module` to the `modules` section of `nuxt.config.js`
 
 ```js
 export default {
-  buildModules: [
+  modules: [
     // Simple usage
     '@nuxtjs/stylelint-module',
 
@@ -40,13 +68,11 @@ export default {
 }
 ```
 
-:warning: If you are using Nuxt **< v2.9** you have to install the module as a `dependency` (No `--dev` or `--save-dev` flags) and use `modules` section in `nuxt.config.js` instead of `buildModules`.
-
 ### Using top level options
 
 ```js
 export default {
-  buildModules: [
+  modules: [
     '@nuxtjs/stylelint-module'
   ],
   stylelint: {
@@ -57,51 +83,29 @@ export default {
 
 ## Options
 
-See [stylelint's options](http://stylelint.io/user-guide/node-api/#options) for the complete list of options available. These options are passed through to the `stylelint` directly.
+See [stylelint's options](http://stylelint.io/user-guide/node-api/#options) for the complete list of options available.
+These options are passed through to the `stylelint` directly.
 
-### `configFile`
+### `cache`
 
-- Type: `String`
-- Default: `undefined`
+- Type: `Boolean`
+- Default: `true`
 
-Specify the config file location to be used by `stylelint`.
+**Note**: The cache is enabled by default to decrease execution time.
 
-**Note:** By default this is [handled by `stylelint`](http://stylelint.io/user-guide/configuration/).
-
-### `context`
-
-- Type: `String`
-- Default: `srcDir`
-
-A string indicating the root of your files.
-
-### `files`
+### `include`
 
 - Type: `String|Array[String]`
-- Default: `['assets/**/*.{s?(a|c)ss,less,stylus}', '{components,layouts,pages}/**/*.vue']`
+- Default: `[nuxt.options.srcDir.'/**/*.{css,scss,sass,less,styl,vue}']`
 
-Specify the glob pattern for finding files. Must be relative to `options.context`.
+Specify directories, files, or globs.
 
-### `fix`
+### `exclude`
 
-- Type: `Boolean`
-- Default: `false`
+- Type: `Array[String]`
+- Default: `['**/node_modules/**', 'virtual:', nuxt.options.buildDir]`
 
-If `true`, `stylelint` will fix as many errors as possible. The fixes are made to the actual source files. All unfixed errors will be reported. See [Autofixing errors](https://stylelint.io/user-guide/cli#autofixing-errors) docs.
-
-### `formatter`
-
-- Type: `Function`
-- Default: `require('stylelint').formatters.string`
-
-Specify the formatter that you would like to use to format your results.
-
-### `lintDirtyModulesOnly`
-
-- Type: `Boolean`
-- Default: `false`
-
-Lint only changed files, skip lint on start.
+Specify the files and/or directories to exclude.
 
 ### `stylelintPath`
 
@@ -110,51 +114,61 @@ Lint only changed files, skip lint on start.
 
 Path to `stylelint` instance that will be used for linting.
 
-### Errors and Warning
+### `formatter`
 
-**By default the plugin will auto adjust error reporting depending on stylelint errors/warnings counts.**
-You can still force this behavior by using `emitError` **or** `emitWarning` options:
+- Type: `Function`
+- Default: `'string'`
 
-#### `emitError`
+Specify the formatter that you would like to use to format your results.
 
-- Type: `Boolean`
-- Default: `true`
-
-Will always return errors, if set to `true`.
-
-#### `emitWarning`
+### `lintOnStart`
 
 - Type: `Boolean`
 - Default: `true`
 
-Will always return warnings, if set to `true`.
+Check all matching files on project startup, too slow, turn on discreetly.
 
-#### `failOnError`
+### `emitWarning`
 
 - Type: `Boolean`
 - Default: `true`
 
-Will cause the module build to fail if there are any errors, if set to `true`.
+The warnings found will be printed.
 
-#### `failOnWarning`
+### `emitError`
+
+- Type: `Boolean`
+- Default: `true`
+
+The errors found will be printed.
+
+### `failOnWarning`
 
 - Type: `Boolean`
 - Default: `false`
 
-Will cause the module build to fail if there are any warnings, if set to `true`.
+Will cause the module build to fail if there are any warnings, based on `emitWarning`.
 
-#### `quiet`
+### `failOnError`
 
 - Type: `Boolean`
-- Default: `false`
+- Default: `true`
 
-Will process and report errors only and ignore warnings, if set to `true`.
+Will cause the module build to fail if there are any errors, based on `emitError`.
 
-## Development
+## Contributing
+
+You can contribute to this module online with CodeSandBox:
+
+[![Edit @nuxtjs/robots](https://codesandbox.io/static/img/play-codesandbox.svg)](https://codesandbox.io/s/github/nuxt-community/stylelint-module/?fontsize=14&hidenavigation=1&theme=dark)
+
+Or locally:
 
 1. Clone this repository
-2. Install dependencies using `yarn install` or `npm install`
-3. Start development server using `npm run dev`
+2. Install dependencies using `pnpm install`
+3. Prepare development server using `pnpm dev:prepare`
+4. Build module using `pnpm build`
+5. Launch playground using `pnpm dev`
 
 ## License
 
