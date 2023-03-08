@@ -7,38 +7,52 @@
   "contributors": [
     "Ricardo Gobbo de Souza <ricardogobbosouza@yahoo.com.br>"
   ],
-  "main": "lib/module.js",
+  "type": "module",
+  "sideEffects": false,
+  "exports": {
+    ".": {
+      "require": "./dist/module.cjs",
+      "import": "./dist/module.mjs"
+    }
+  },
+  "main": "./dist/module.cjs",
+  "types": "./dist/types.d.ts",
   "files": [
-    "lib"
+    "dist"
   ],
   "scripts": {
-    "dev": "nuxt test/fixture",
-    "lint": "eslint --ext .js,.vue .",
-    "release": "yarn test && standard-version && git push --follow-tags && npm publish",
-    "test": "yarn lint && jest"
+    "build": "nuxt-module-build",
+    "dev": "nuxi dev playground",
+    "dev:build": "nuxi build playground",
+    "dev:prepare": "nuxt-module-build --stub && nuxi prepare playground",
+    "lint": "eslint --ext .js,.ts,.vue",
+    "prepack": "pnpm build",
+    "release": "pnpm test && pnpm build && changelogen --release && git push --follow-tags && pnpm publish",
+    "test": "pnpm lint && vitest run --coverage"
   },
   "dependencies": {
-    "consola": "^2.15.3",
-    "stylelint-webpack-plugin": "^2.3.1"
+    "@nuxt/kit": "^3.2.3",
+    "stylelint-webpack-plugin": "^4.1.0",
+    "vite-plugin-stylelint": "^4.2.0"
   },
   "devDependencies": {
-    "@commitlint/cli": "latest",
-    "@commitlint/config-conventional": "latest",
-    "@nuxtjs/eslint-config": "latest",
-    "@nuxtjs/module-test-utils": "latest",
+    "@nuxt/module-builder": "latest",
+    "@nuxt/test-utils": "latest",
+    "@nuxtjs/eslint-config-typescript": "latest",
+    "@vitest/coverage-c8": "latest",
+    "changelogen": "latest",
     "eslint": "latest",
-    "eslint-plugin-jest": "latest",
-    "husky": "^4.3.8",
-    "jest": "latest",
-    "nuxt-edge": "latest",
-    "standard-version": "latest",
-    "stylelint": "latest"
+    "nuxt": "latest",
+    "postcss-html": "latest",
+    "stylelint": "latest",
+    "stylelint-config-recommended-vue": "latest",
+    "vitest": "latest"
   },
   "peerDependencies": {
-    "stylelint": ">=13",
-    "webpack": "^4.0.0 || ^5.0.0"
+    "stylelint": ">=13"
   },
   "publishConfig": {
     "access": "public"
-  }
+  },
+  "packageManager": "pnpm@7.29.1"
 }
