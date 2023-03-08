@@ -28,7 +28,7 @@
     "@nuxtjs/module-test-utils": "latest",
     "eslint": "latest",
     "eslint-plugin-jest": "latest",
-    "husky": "^4.3.8",
+    "husky": "^8.0.3",
     "jest": "latest",
     "nuxt-edge": "latest",
     "standard-version": "latest",
