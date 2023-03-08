@@ -2,6 +2,27 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+## v5.0.0
+
+[compare changes](https://undefined/undefined/compare/v4.2.0...v5.0.0)
+
+
+### 💅 Refactors
+
+  - ⚠️  Add support for nuxt 3/nuxt bridge (#74)
+
+### 🏡 Chore
+
+  - Rename branch (ecbd1d9)
+
+#### ⚠️  Breaking Changes
+
+  - ⚠️  Add support for nuxt 3/nuxt bridge (#74)
+
+### ❤️  Contributors
+
+- Ricardo Gobbo De Souza ([@ricardogobbosouza](http://github.com/ricardogobbosouza))
+
 ## [4.2.0](https://github.com/nuxt-community/stylelint-module/compare/v3.2.2...v4.2.0) (2023-03-08)
 
 
