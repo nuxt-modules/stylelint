@@ -107,33 +107,12 @@ Specify directories, files, or globs.
 
 Specify the files and/or directories to exclude.
 
-### `emitError`
+### `stylelintPath`
 
-- Type: `Boolean`
-- Default: `true`
+- Type: `String`
+- Default: `stylelint`
 
-The errors found will be printed.
-
-### `emitWarning`
-
-- Type: `Boolean`
-- Default: `true`
-
-The warnings found will be printed.
-
-### `failOnError`
-
-- Type: `Boolean`
-- Default: `true`
-
-Will cause the module build to fail if there are any errors, based on `emitError`.
-
-### `failOnWarning`
-
-- Type: `Boolean`
-- Default: `false`
-
-Will cause the module build to fail if there are any warnings, based on `emitWarning`.
+Path to `stylelint` instance that will be used for linting.
 
 ### `formatter`
 
@@ -149,12 +128,33 @@ Specify the formatter that you would like to use to format your results.
 
 Check all matching files on project startup, too slow, turn on discreetly.
 
-### `stylelintPath`
+### `emitWarning`
 
-- Type: `String`
-- Default: `stylelint`
+- Type: `Boolean`
+- Default: `true`
 
-Path to `stylelint` instance that will be used for linting.
+The warnings found will be printed.
+
+### `emitError`
+
+- Type: `Boolean`
+- Default: `true`
+
+The errors found will be printed.
+
+### `failOnWarning`
+
+- Type: `Boolean`
+- Default: `false`
+
+Will cause the module build to fail if there are any warnings, based on `emitWarning`.
+
+### `failOnError`
+
+- Type: `Boolean`
+- Default: `true`
+
+Will cause the module build to fail if there are any errors, based on `emitError`.
 
 ## Contributing
 

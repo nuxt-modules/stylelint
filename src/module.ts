@@ -25,9 +25,12 @@ export default defineNuxtModule<ModuleOptions>({
     stylelintPath: 'stylelint',
     formatter: 'string',
     lintOnStart: true,
+    emitWarning: true,
     emitError: true,
-    emitWarning: true
+    failOnWarning: false,
+    failOnError: true
   }),
+
   setup (options, nuxt) {
     if (!nuxt.options.dev) {
       return
