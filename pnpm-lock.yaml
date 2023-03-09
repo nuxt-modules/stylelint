@@ -13,13 +13,13 @@ specifiers:
   stylelint: latest
   stylelint-config-recommended-vue: latest
   stylelint-webpack-plugin: ^4.1.0
-  vite-plugin-stylelint: ^4.2.0
+  vite-plugin-stylelint: ^4.3.0
   vitest: latest
 
 dependencies:
   '@nuxt/kit': 3.2.3
   stylelint-webpack-plugin: 4.1.0_stylelint@15.2.0
-  vite-plugin-stylelint: 4.2.0_stylelint@15.2.0
+  vite-plugin-stylelint: 4.3.0_stylelint@15.2.0
 
 devDependencies:
   '@nuxt/module-builder': 0.2.1
@@ -7484,8 +7484,8 @@ packages:
       vscode-uri: 3.0.7
     dev: true
 
-  /vite-plugin-stylelint/4.2.0_stylelint@15.2.0:
-    resolution: {integrity: sha512-hzy/cAwj9qlQTqV7nuucEDL3663ECQbSFrQbGcf9arXRF4ZZeJY0o/ztugEtjMdlD581BgYR+q4dEnwv5QhCxQ==}
+  /vite-plugin-stylelint/4.3.0_stylelint@15.2.0:
+    resolution: {integrity: sha512-S8BONq5X8TndOFt+My4lkeHxVZvkDQRL++TV0nvnuYgOU/CvDddPPOT4V6go+ETzWK0NEtXqCGFnpkmm8c8Xcg==}
     engines: {node: '>=14.18'}
     peerDependencies:
       '@types/stylelint': ^13.0.0
