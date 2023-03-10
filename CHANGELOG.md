@@ -2,6 +2,25 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+## v5.0.1
+
+[compare changes](https://undefined/undefined/compare/v5.0.0...v5.0.1)
+
+
+### 🩹 Fixes
+
+  - Webpack options (#77)
+  - Compatibility (#76)
+
+### 🏡 Chore
+
+  - Remove .stylelintcache (68dea04)
+  - Update module (7eaaf74)
+
+### ❤️  Contributors
+
+- Ricardo Gobbo De Souza ([@ricardogobbosouza](http://github.com/ricardogobbosouza))
+
 ## v5.0.0
 
 [compare changes](https://undefined/undefined/compare/v4.2.0...v5.0.0)
