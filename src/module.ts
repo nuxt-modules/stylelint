@@ -1,11 +1,9 @@
-import { defineNuxtModule, addVitePlugin, addWebpackPlugin, hasNuxtCompatibility } from '@nuxt/kit'
-// waiting https://github.com/ModyQyW/vite-plugin-stylelint/pull/42
-// import type { StylelintPluginUserOptions as VitePlugin } from 'vite-plugin-stylelint'
+import { defineNuxtModule, addVitePlugin, addWebpackPlugin } from '@nuxt/kit'
+import type { StylelintPluginUserOptions as VitePlugin } from 'vite-plugin-stylelint'
 import type { Options as WebpackPlugin } from 'stylelint-webpack-plugin'
 import vitePluginStylelint from 'vite-plugin-stylelint'
 import StylelintWebpackPlugin from 'stylelint-webpack-plugin'
 import { name, version } from '../package.json'
-import type { StylelintPluginUserOptions as VitePlugin } from './types'
 
 export type ModuleOptions = VitePlugin & WebpackPlugin
 
@@ -36,23 +34,18 @@ export default defineNuxtModule<ModuleOptions>({
       return
     }
 
-    /* waiting nuxt 3.3
-    if (hasNuxtCompatibility({ nuxt: '>=3.3' })) {
-      nuxt.hooks.hookOnce('builder:watch', (_, path) => {
-        const configFiles = [
-          '.stylelintignore',
-          '.stylelintrc',
-          '.stylelintrc.json',
-          '.stylelintrc.yaml',
-          '.stylelintrc.yml',
-          '.stylelintrc.js',
-          'stylelint.config.js'
-        ]
-
-        if (configFiles.includes(path)) {
-          nuxt.callHook('restart', { hard: true })
-        }
-      })
+    /*
+    // waiting nuxt 3.3
+    if (nuxt.options.watch) {
+      nuxt.options.watch.push(
+        '.stylelintignore',
+        '.stylelintrc',
+        '.stylelintrc.json',
+        '.stylelintrc.yaml',
+        '.stylelintrc.yml',
+        '.stylelintrc.js',
+        'stylelint.config.js'
+      )
     }
     */
 
