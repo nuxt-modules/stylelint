@@ -10,6 +10,13 @@
 
 [📖 **Release Notes**](./CHANGELOG.md)
 
+---
+
+**Note:** This branch is for **Nuxt 3** or **Nuxt Bridge** compatible module.
+Checkout the [`nuxt2` branch](https://github.com/nuxt-community/stylelint-module/tree/nuxt2) for **Nuxt 2** support.
+
+---
+
 ## Requirements
 
 You need to ensure that you have `stylelint` installed:
