@@ -2,7 +2,7 @@
   "name": "@nuxtjs/stylelint-module",
   "version": "5.0.1",
   "description": "Stylelint module for Nuxt.js",
-  "repository": "nuxt-community/stylelint-module",
+  "repository": "nuxt-modules/stylelint",
   "license": "MIT",
   "contributors": [
     "Ricardo Gobbo de Souza <ricardogobbosouza@yahoo.com.br>"
