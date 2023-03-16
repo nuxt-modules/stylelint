@@ -13,7 +13,7 @@
 ---
 
 **Note:** This branch is for **Nuxt 3** or **Nuxt Bridge** compatible module.
-Checkout the [`nuxt2` branch](https://github.com/nuxt-community/stylelint-module/tree/nuxt2) for **Nuxt 2** support.
+Checkout the [`nuxt2` branch](https://github.com/nuxt-modules/stylelint/tree/nuxt2) for **Nuxt 2** support.
 
 ---
 
@@ -167,7 +167,7 @@ Will cause the module build to fail if there are any errors, based on `emitError
 
 You can contribute to this module online with CodeSandBox:
 
-[![Edit @nuxtjs/robots](https://codesandbox.io/static/img/play-codesandbox.svg)](https://codesandbox.io/s/github/nuxt-community/stylelint-module/?fontsize=14&hidenavigation=1&theme=dark)
+[![Edit @nuxtjs/robots](https://codesandbox.io/static/img/play-codesandbox.svg)](https://codesandbox.io/s/github/nuxt-modules/stylelint/?fontsize=14&hidenavigation=1&theme=dark)
 
 Or locally:
 
@@ -181,7 +181,7 @@ Or locally:
 
 [MIT License](./LICENSE)
 
-Copyright (c) Nuxt Community
+Copyright (c) Nuxt Modules
 
 <!-- Badges -->
 [npm-version-src]: https://img.shields.io/npm/v/@nuxtjs/stylelint-module/latest.svg
@@ -190,11 +190,11 @@ Copyright (c) Nuxt Community
 [npm-downloads-src]: https://img.shields.io/npm/dt/@nuxtjs/stylelint-module.svg
 [npm-downloads-href]: https://npmjs.com/package/@nuxtjs/stylelint-module
 
-[github-actions-ci-src]: https://github.com/nuxt-community/stylelint-module/workflows/ci/badge.svg
-[github-actions-ci-href]: https://github.com/nuxt-community/stylelint-module/actions?query=workflow%3Aci
+[github-actions-ci-src]: https://github.com/nuxt-modules/stylelint/workflows/ci/badge.svg
+[github-actions-ci-href]: https://github.com/nuxt-modules/stylelint/actions?query=workflow%3Aci
 
-[codecov-src]: https://img.shields.io/codecov/c/github/nuxt-community/stylelint-module.svg
-[codecov-href]: https://codecov.io/gh/nuxt-community/stylelint-module
+[codecov-src]: https://img.shields.io/codecov/c/github/nuxt-modules/stylelint.svg
+[codecov-href]: https://codecov.io/gh/nuxt-modules/stylelint
 
 [license-src]: https://img.shields.io/npm/l/@nuxtjs/stylelint-module.svg
 [license-href]: https://npmjs.com/package/@nuxtjs/stylelint-module
