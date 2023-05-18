@@ -10,6 +10,6 @@ describe('prod', async () => {
 
   test('should not added stylelint plugin', () => {
     const { nuxt } = useTestContext()
-    expect(nuxt?.hooks._hooks['vite:extendConfig']).toHaveLength(4)
+    expect(nuxt?.hooks._hooks['vite:extendConfig']).toHaveLength(5)
   })
 })
