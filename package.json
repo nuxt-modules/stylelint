@@ -1,6 +1,6 @@
 {
   "name": "@nuxtjs/stylelint-module",
-  "version": "5.0.1",
+  "version": "5.1.0",
   "description": "Stylelint module for Nuxt.js",
   "repository": "nuxt-modules/stylelint",
   "license": "MIT",

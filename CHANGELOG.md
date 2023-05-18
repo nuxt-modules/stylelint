@@ -2,6 +2,28 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+## v5.1.0
+
+[compare changes](https://undefined/undefined/compare/v5.0.1...v5.1.0)
+
+
+### 🚀 Enhancements
+
+  - Restart nuxt when stylelint config file is changed (#84)
+
+### 📖 Documentation
+
+  - Note for nuxt2 (#80)
+
+### 🏡 Chore
+
+  - Move to nuxt-modules (#82)
+  - Update deps (049f048)
+
+### ❤️  Contributors
+
+- Ricardo Gobbo De Souza ([@ricardogobbosouza](http://github.com/ricardogobbosouza))
+
 ## v5.0.1
 
 [compare changes](https://undefined/undefined/compare/v5.0.0...v5.0.1)
