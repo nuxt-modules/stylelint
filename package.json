@@ -33,7 +33,7 @@
   "dependencies": {
     "@nuxt/kit": "^3.5.1",
     "chokidar": "^3.5.3",
-    "pathe": "^1.1.0",
+    "pathe": "^1.1.1",
     "stylelint-webpack-plugin": "^4.1.1",
     "vite-plugin-stylelint": "^4.3.0"
   },
@@ -56,5 +56,5 @@
   "publishConfig": {
     "access": "public"
   },
-  "packageManager": "pnpm@8.5.1"
+  "packageManager": "pnpm@8.6.9"
 }
