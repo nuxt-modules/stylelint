@@ -32,7 +32,6 @@ export default defineNuxtModule<ModuleOptions>({
     failOnWarning: false,
     failOnError: true
   }),
-
   setup (options, nuxt) {
     if (!nuxt.options.dev) {
       return
