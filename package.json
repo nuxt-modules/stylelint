@@ -14,7 +14,7 @@
   "scripts": {
     "dev": "nuxt test/fixture",
     "lint": "eslint --ext .js,.vue .",
-    "release": "yarn test && standard-version && git push --follow-tags && npm publish",
+    "release": "yarn test && standard-version && git push --follow-tags origin nuxt2 && npm publish --tag nuxt2",
     "test": "yarn lint && jest"
   },
   "dependencies": {
