@@ -1,5 +1,1 @@
-module.exports = {
-  rules: {
-
-  }
-}
+module.exports = {}
