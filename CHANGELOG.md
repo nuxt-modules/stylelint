@@ -2,6 +2,13 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+### [4.2.2](https://github.com/nuxt-community/stylelint-module/compare/v4.2.1...v4.2.2) (2023-11-28)
+
+
+### Bug Fixes
+
+* bump consola to 3.x to align with other nuxt 2 packages ([#104](https://github.com/nuxt-community/stylelint-module/issues/104)) ([765df97](https://github.com/nuxt-community/stylelint-module/commit/765df97652c1e644ff42cb96c8482d86e7cfc826))
+
 ### [4.2.1](https://github.com/nuxt-community/stylelint-module/compare/v4.2.0...v4.2.1) (2023-03-10)
 
 ## [4.2.0](https://github.com/nuxt-community/stylelint-module/compare/v3.2.2...v4.2.0) (2023-03-08)
