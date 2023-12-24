@@ -27,6 +27,7 @@ export default defineNuxtModule<ModuleOptions>({
     stylelintPath: 'stylelint',
     formatter: 'string',
     lintOnStart: true,
+    lintDirtyOnly: true,
     emitWarning: true,
     emitError: true,
     failOnWarning: false,

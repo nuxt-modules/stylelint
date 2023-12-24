@@ -135,6 +135,13 @@ Specify the formatter that you would like to use to format your results.
 
 Check all matching files on project startup, too slow, turn on discreetly.
 
+### `lintDirtyOnly`
+
+- Type: `Boolean`
+- Default: `true`
+
+Lint changed files only when running Stylelint except from buildStart hook, all specified files from `include` option will be linted when disabled.
+
 ### `emitWarning`
 
 - Type: `Boolean`
