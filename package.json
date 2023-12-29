@@ -24,14 +24,14 @@
     "build": "nuxt-module-build",
     "dev": "nuxi dev playground",
     "dev:build": "nuxi build playground",
-    "dev:prepare": "nuxt-module-build --stub && nuxi prepare playground",
+    "dev:prepare": "nuxt-module-build --stub && nuxt-module-build prepare && nuxi prepare playground",
     "lint": "eslint --ext .js,.ts,.vue",
     "prepack": "pnpm build",
     "release": "pnpm test && pnpm build && changelogen --release && git push --follow-tags && pnpm publish",
     "test": "pnpm lint && vitest run --coverage"
   },
   "dependencies": {
-    "@nuxt/kit": "^3.8.2",
+    "@nuxt/kit": "^3.9.0",
     "chokidar": "^3.5.3",
     "pathe": "^1.1.1",
     "stylelint-webpack-plugin": "^4.1.1",
@@ -56,5 +56,5 @@
   "publishConfig": {
     "access": "public"
   },
-  "packageManager": "pnpm@8.11.0"
+  "packageManager": "pnpm@8.13.1"
 }
