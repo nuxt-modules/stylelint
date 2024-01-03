@@ -39,6 +39,8 @@ Or, with `npm`
 npm install -D stylelint
 ```
 
+**Note:** Currently, this module is compatible with the latest version 16 of `stylelint` only when using vite, support for webpack is not yet implemented (see https://github.com/webpack-contrib/stylelint-webpack-plugin/issues/342).
+
 ## Setup
 
 1. Add `@nuxtjs/stylelint-module` dependency to your project
