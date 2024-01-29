@@ -39,6 +39,8 @@ Or, with `npm`
 npm install -D stylelint
 ```
 
+**Note:** Currently, this module is compatible with the latest version 16 of `stylelint` only when using vite, support for webpack is not yet implemented (see https://github.com/webpack-contrib/stylelint-webpack-plugin/issues/342).
+
 ## Setup
 
 1. Add `@nuxtjs/stylelint-module` dependency to your project
@@ -134,6 +136,13 @@ Specify the formatter that you would like to use to format your results.
 - Default: `true`
 
 Check all matching files on project startup, too slow, turn on discreetly.
+
+### `lintDirtyOnly`
+
+- Type: `Boolean`
+- Default: `true`
+
+Lint changed files only when running Stylelint except from buildStart hook, all specified files from `include` option will be linted when disabled.
 
 ### `emitWarning`
 

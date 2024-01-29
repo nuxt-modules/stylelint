@@ -27,6 +27,7 @@ export default defineNuxtModule<ModuleOptions>({
     stylelintPath: 'stylelint',
     formatter: 'string',
     lintOnStart: true,
+    lintDirtyOnly: true,
     emitWarning: true,
     emitError: true,
     failOnWarning: false,
@@ -51,7 +52,7 @@ export default defineNuxtModule<ModuleOptions>({
       nuxt.options.watch.push(...configPaths)
     } else {
       const watcher = watch(configPaths, { depth: 0 }).on('change', (path: string) => {
-        logger.info(`Eslint config changed: ${path}`)
+        logger.info(`Stylelint config changed: ${path}`)
         logger.warn('Please restart the Nuxt server to apply changes or upgrade to latest Nuxt for automatic restart.')
       })
       nuxt.hook('close', () => watcher.close())
