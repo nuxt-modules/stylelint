@@ -2,6 +2,26 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+## v5.2.0
+
+[compare changes](https://github.com/nuxt-modules/stylelint/compare/v5.1.0...v5.2.0)
+
+### 🚀 Enhancements
+
+- Support stylelint v16 with vite-plugin-stylelint v5 ([#109](https://github.com/nuxt-modules/stylelint/pull/109))
+
+### 🏡 Chore
+
+- Update renovate.json ([ea3b5a5](https://github.com/nuxt-modules/stylelint/commit/ea3b5a5))
+- Use `@vitest/coverage-v8` ([#92](https://github.com/nuxt-modules/stylelint/pull/92))
+- Use module-builder stub mode for more accurate types ([#106](https://github.com/nuxt-modules/stylelint/pull/106))
+
+### ❤️ Contributors
+
+- Lay <brownsugar.idv.tw@gmail.com>
+- Daniel Roe ([@danielroe](http://github.com/danielroe))
+- Ricardo Gobbo De Souza ([@ricardogobbosouza](http://github.com/ricardogobbosouza))
+
 ## v5.1.0
 
 [compare changes](https://undefined/undefined/compare/v5.0.1...v5.1.0)
