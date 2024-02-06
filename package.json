@@ -32,7 +32,7 @@
   },
   "dependencies": {
     "@nuxt/kit": "^3.10.1",
-    "chokidar": "^3.5.3",
+    "chokidar": "^3.6.0",
     "pathe": "^1.1.2",
     "stylelint-webpack-plugin": "^5.0.0",
     "vite-plugin-stylelint": "^5.3.1"
