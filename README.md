@@ -39,8 +39,6 @@ Or, with `npm`
 npm install -D stylelint
 ```
 
-**Note:** Currently, this module is compatible with the latest version 16 of `stylelint` only when using vite, support for webpack is not yet implemented (see https://github.com/webpack-contrib/stylelint-webpack-plugin/issues/342).
-
 ## Setup
 
 1. Add `@nuxtjs/stylelint-module` dependency to your project
@@ -69,25 +67,28 @@ npm install -D @nuxtjs/stylelint-module
 export default {
   modules: [
     // Simple usage
-    '@nuxtjs/stylelint-module',
+    "@nuxtjs/stylelint-module",
 
     // With options
-    ['@nuxtjs/stylelint-module', { /* module options */ }]
-  ]
-}
+    [
+      "@nuxtjs/stylelint-module",
+      {
+        /* module options */
+      },
+    ],
+  ],
+};
 ```
 
 ### Using top level options
 
 ```js
 export default {
-  modules: [
-    '@nuxtjs/stylelint-module'
-  ],
+  modules: ["@nuxtjs/stylelint-module"],
   stylelint: {
     /* module options */
-  }
-}
+  },
+};
 ```
 
 ## Options
@@ -193,17 +194,14 @@ Or locally:
 Copyright (c) Nuxt Modules
 
 <!-- Badges -->
+
 [npm-version-src]: https://img.shields.io/npm/v/@nuxtjs/stylelint-module/latest.svg
 [npm-version-href]: https://npmjs.com/package/@nuxtjs/stylelint-module
-
 [npm-downloads-src]: https://img.shields.io/npm/dt/@nuxtjs/stylelint-module.svg
 [npm-downloads-href]: https://npmjs.com/package/@nuxtjs/stylelint-module
-
 [github-actions-ci-src]: https://github.com/nuxt-modules/stylelint/workflows/ci/badge.svg
 [github-actions-ci-href]: https://github.com/nuxt-modules/stylelint/actions?query=workflow%3Aci
-
 [codecov-src]: https://img.shields.io/codecov/c/github/nuxt-modules/stylelint.svg
 [codecov-href]: https://codecov.io/gh/nuxt-modules/stylelint
-
 [license-src]: https://img.shields.io/npm/l/@nuxtjs/stylelint-module.svg
 [license-href]: https://npmjs.com/package/@nuxtjs/stylelint-module
