@@ -1,3 +1,4 @@
+// module.ts
 import { defineNuxtModule, addVitePlugin, addWebpackPlugin, useLogger } from '@nuxt/kit'
 import type { StylelintPluginUserOptions as VitePlugin } from 'vite-plugin-stylelint'
 import type { Options as WebpackPlugin } from 'stylelint-webpack-plugin'
@@ -33,7 +34,7 @@ export default defineNuxtModule<ModuleOptions>({
     failOnWarning: false,
     failOnError: true
   }),
-  setup (options, nuxt) {
+  setup(options, nuxt) {
     if (!nuxt.options.dev) {
       return
     }
@@ -53,7 +54,7 @@ export default defineNuxtModule<ModuleOptions>({
     } else {
       const watcher = watch(configPaths, { depth: 0 }).on('change', (path: string) => {
         logger.info(`Stylelint config changed: ${path}`)
-        logger.warn('Please restart the Nuxt server to apply changes or upgrade to latest Nuxt for automatic restart.')
+        logger.warn('Please restart the Nuxt server to apply changes or upgrade to the latest Nuxt for automatic restart.')
       })
       nuxt.hook('close', () => watcher.close())
     }
