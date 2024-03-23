@@ -161,6 +161,7 @@ The errors found will be printed.
 
 ### `failOnWarning`
 
+- Builder: `webpack` // Only works with webpack builder
 - Type: `Boolean`
 - Default: `false`
 
@@ -168,6 +169,7 @@ Will cause the module build to fail if there are any warnings, based on `emitWar
 
 ### `failOnError`
 
+- Builder: `webpack` // Only works with webpack builder
 - Type: `Boolean`
 - Default: `true`
 
