@@ -43,20 +43,6 @@ npm install -D stylelint
 
 1. Add `@nuxtjs/stylelint-module` dependency to your project
 
-With `pnpm`
-
-```bash
-npx nuxi@latest module add stylelint
-```
-
-Or, with `yarn`
-
-```bash
-npx nuxi@latest module add stylelint
-```
-
-Or, with `npm`
-
 ```bash
 npx nuxi@latest module add stylelint
 ```
