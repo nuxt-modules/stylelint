@@ -15,8 +15,8 @@ export default defineNuxtModule<ModuleOptions>({
     version,
     configKey: 'stylelint',
     compatibility: {
-      bridge: true
-    }
+      bridge: true,
+    },
   },
   defaults: nuxt => ({
     cache: true,
@@ -29,9 +29,9 @@ export default defineNuxtModule<ModuleOptions>({
     emitWarning: true,
     emitError: true,
     failOnWarning: false,
-    failOnError: true
+    failOnError: true,
   }),
-  async setup (options, nuxt) {
+  async setup(options, nuxt) {
     if (!nuxt.options.dev) {
       return
     }
@@ -43,12 +43,13 @@ export default defineNuxtModule<ModuleOptions>({
       '.stylelintrc.yaml',
       '.stylelintrc.yml',
       '.stylelintrc.js',
-      'stylelint.config.js'
+      'stylelint.config.js',
     ].map(path => relative(nuxt.options.rootDir, path))
 
     if (nuxt.options.watch) {
       nuxt.options.watch.push(...configPaths)
-    } else {
+    }
+    else {
       const watcher = watch(configPaths, { depth: 0 }).on('change', (path: string) => {
         logger.info(`Stylelint config changed: ${path}`)
         logger.warn('Please restart the Nuxt server to apply changes or upgrade to latest Nuxt for automatic restart.')
@@ -62,7 +63,8 @@ export default defineNuxtModule<ModuleOptions>({
       addVitePlugin(() => {
         return vitePluginStylelint(options)
       }, { server: false })
-    } else if (nuxt.options.builder === '@nuxt/webpack-builder') {
+    }
+    else if (nuxt.options.builder === '@nuxt/webpack-builder') {
       const StylelintWebpackPlugin = await import('stylelint-webpack-plugin').then(m => 'default' in m ? m.default : m)
 
       addWebpackPlugin(() => {
@@ -70,7 +72,7 @@ export default defineNuxtModule<ModuleOptions>({
           ...options,
           context: nuxt.options.srcDir,
           files: options.include,
-          lintDirtyModulesOnly: !options.lintOnStart
+          lintDirtyModulesOnly: !options.lintOnStart,
         }
 
         delete webpackOptions.include
@@ -78,8 +80,9 @@ export default defineNuxtModule<ModuleOptions>({
 
         return new StylelintWebpackPlugin(webpackOptions)
       }, { server: false })
-    } else {
+    }
+    else {
       logger.warn('Unsupported builder ' + nuxt.options.builder + ', Stylelint is not enabled.')
     }
-  }
+  },
 })
