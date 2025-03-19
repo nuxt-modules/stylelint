@@ -34,7 +34,7 @@
     "@nuxt/kit": "^3.16.0",
     "chokidar": "^3.6.0",
     "pathe": "^2.0.3",
-    "stylelint-webpack-plugin": "^5.0.0",
+    "stylelint-webpack-plugin": "^5.0.1",
     "vite-plugin-stylelint": "^5.3.1"
   },
   "devDependencies": {
@@ -42,13 +42,13 @@
     "@nuxt/test-utils": "latest",
     "@vitest/coverage-v8": "latest",
     "changelogen": "latest",
-    "eslint": "9.1.1",
+    "eslint": "9.22.0",
     "nuxt": "latest",
     "postcss-html": "latest",
     "stylelint": "latest",
     "stylelint-config-recommended-vue": "latest",
     "vitest": "latest",
-    "@nuxt/eslint-config": "0.3.9"
+    "@nuxt/eslint-config": "0.7.6"
   },
   "peerDependencies": {
     "stylelint": ">=13"
@@ -56,5 +56,5 @@
   "publishConfig": {
     "access": "public"
   },
-  "packageManager": "pnpm@8.15.5"
+  "packageManager": "pnpm@8.15.9"
 }
