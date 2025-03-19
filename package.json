@@ -35,7 +35,7 @@
     "chokidar": "^3.6.0",
     "pathe": "^1.1.2",
     "stylelint-webpack-plugin": "^5.0.0",
-    "vite-plugin-stylelint": "^5.3.1"
+    "vite-plugin-stylelint": "^6.0.0"
   },
   "devDependencies": {
     "@nuxt/module-builder": "latest",
