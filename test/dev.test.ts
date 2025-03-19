@@ -10,6 +10,6 @@ describe('dev', async () => {
 
   test('should added stylelint plugin', () => {
     const { nuxt } = useTestContext()
-    expect(nuxt?.hooks._hooks['vite:extendConfig']).toHaveLength(7)
+    expect(nuxt?.hooks._hooks['vite:extendConfig']).toHaveLength(18)
   })
 })
