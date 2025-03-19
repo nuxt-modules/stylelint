@@ -32,23 +32,23 @@
   },
   "dependencies": {
     "@nuxt/kit": "^3.16.0",
-    "chokidar": "^3.6.0",
+    "chokidar": "^4.0.3",
     "pathe": "^2.0.3",
-    "stylelint-webpack-plugin": "^5.0.0",
-    "vite-plugin-stylelint": "^5.3.1"
+    "stylelint-webpack-plugin": "^5.0.1",
+    "vite-plugin-stylelint": "^6.0.0"
   },
   "devDependencies": {
+    "@nuxt/eslint-config": "latest",
     "@nuxt/module-builder": "latest",
     "@nuxt/test-utils": "latest",
     "@vitest/coverage-v8": "latest",
     "changelogen": "latest",
-    "eslint": "9.1.1",
+    "eslint": "latest",
     "nuxt": "latest",
     "postcss-html": "latest",
     "stylelint": "latest",
     "stylelint-config-recommended-vue": "latest",
-    "vitest": "latest",
-    "@nuxt/eslint-config": "0.3.9"
+    "vitest": "latest"
   },
   "peerDependencies": {
     "stylelint": ">=13"
@@ -56,5 +56,5 @@
   "publishConfig": {
     "access": "public"
   },
-  "packageManager": "pnpm@8.15.5"
+  "packageManager": "pnpm@10.6.5"
 }
