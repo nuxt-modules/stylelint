@@ -9,8 +9,8 @@ dependencies:
     specifier: ^3.16.0
     version: 3.16.0(magicast@0.3.2)
   chokidar:
-    specifier: ^3.6.0
-    version: 3.6.0
+    specifier: ^4.0.3
+    version: 4.0.3
   pathe:
     specifier: ^2.0.3
     version: 2.0.3
