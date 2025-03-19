@@ -31,7 +31,7 @@
     "test": "pnpm lint && vitest run --coverage"
   },
   "dependencies": {
-    "@nuxt/kit": "^3.16.0",
+    "@nuxt/kit": "^3.16.1",
     "chokidar": "^4.0.3",
     "pathe": "^2.0.3",
     "stylelint-webpack-plugin": "^5.0.1",
