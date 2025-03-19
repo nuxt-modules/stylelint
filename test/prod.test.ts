@@ -5,7 +5,7 @@ describe('prod', async () => {
   await setup({
     fixture: '../playground',
     server: false,
-    dev: false
+    dev: false,
   })
 
   test('should not added stylelint plugin', () => {
