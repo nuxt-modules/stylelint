@@ -2,6 +2,42 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+## v5.2.1
+
+[compare changes](https://github.com/nuxt-modules/stylelint/compare/v5.2.0...v5.2.1)
+
+### 🩹 Fixes
+
+- Usage plugin by builder ([#127](https://github.com/nuxt-modules/stylelint/pull/127))
+
+### 📖 Documentation
+
+- Remove note for stylelint 16 ([d831875](https://github.com/nuxt-modules/stylelint/commit/d831875))
+- Add builder type ([#126](https://github.com/nuxt-modules/stylelint/pull/126))
+- Use new `nuxi module add` command in installation ([#129](https://github.com/nuxt-modules/stylelint/pull/129))
+
+### 🏡 Chore
+
+- **release:** V5.2.0 ([ca1b6e9](https://github.com/nuxt-modules/stylelint/commit/ca1b6e9))
+- Update module builder ([9317100](https://github.com/nuxt-modules/stylelint/commit/9317100))
+- Migrate to eslint v9 ([#133](https://github.com/nuxt-modules/stylelint/pull/133))
+- Update deps ([92dec7e](https://github.com/nuxt-modules/stylelint/commit/92dec7e))
+
+### ✅ Tests
+
+- Update ([7d40a0c](https://github.com/nuxt-modules/stylelint/commit/7d40a0c))
+- Coverage src files ([a53e7d0](https://github.com/nuxt-modules/stylelint/commit/a53e7d0))
+
+### 🤖 CI
+
+- Add codecov token ([#134](https://github.com/nuxt-modules/stylelint/pull/134))
+- Use node 20 ([86312c4](https://github.com/nuxt-modules/stylelint/commit/86312c4))
+
+### ❤️ Contributors
+
+- Ricardo Gobbo De Souza ([@ricardogobbosouza](https://github.com/ricardogobbosouza))
+- Daniel Roe ([@danielroe](https://github.com/danielroe))
+
 ## v5.2.0
 
 [compare changes](https://github.com/nuxt-modules/stylelint/compare/v5.1.0...v5.2.0)
