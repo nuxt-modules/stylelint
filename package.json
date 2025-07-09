@@ -35,7 +35,7 @@
     "chokidar": "^4.0.3",
     "pathe": "^2.0.3",
     "stylelint-webpack-plugin": "^5.0.1",
-    "vite-plugin-stylelint": "^6.0.0"
+    "vite-plugin-stylelint": "^6.0.2"
   },
   "devDependencies": {
     "@nuxt/eslint-config": "latest",
@@ -56,5 +56,5 @@
   "publishConfig": {
     "access": "public"
   },
-  "packageManager": "pnpm@10.7.1"
+  "packageManager": "pnpm@10.13.1"
 }
